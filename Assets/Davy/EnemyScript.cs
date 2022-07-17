@@ -19,6 +19,7 @@ public class EnemyScript : MonoBehaviour
         health -= damageAmount;
         if(health <= 0)
         {
+            
             Destroy(gameObject);
          } 
     }

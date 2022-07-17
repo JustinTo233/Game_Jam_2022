@@ -150,3 +150,5 @@ MonoBehaviour:
   maxHealth: 1
   attackDamage: 1
   attackSpeed: 1
+  goblindeath_sound: {fileID: 0}
+  skulldeath_sound: {fileID: 0}
