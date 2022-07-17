@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
+    public GameOver GameOver;
+
     //PlayerVariables are the base component variables for the player
     #region PlayerVariables
     Rigidbody2D rb;
@@ -233,7 +235,7 @@ public class PlayerScript : MonoBehaviour
     //IMPORTANT GAME MANAGER HERE
     public void PlayerDeath()
     {
-        
+        GameOver;
     }
     #endregion
 

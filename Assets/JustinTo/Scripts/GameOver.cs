@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameOver : MonoBehaviour
 {
     // Start is called before the first frame update
+    
     public void MainMenuButton()
     {
         SceneManager.LoadScene("MainMenu");
@@ -16,4 +17,6 @@ public class GameOver : MonoBehaviour
         Debug.Log("Quit");
         Application.Quit();
     }
+
+    
 }
