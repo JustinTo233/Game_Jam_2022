@@ -22,7 +22,7 @@ public class swiggity : MonoBehaviour
     {       
             pos = transform.position;
             currentTargPos =  target.position.normalized;
-            axis = new Vector3(currentTargPos.y, -currentTargPos.x, 0);; //the object will move perpendicular to this axis, don't point this at the target, point a perpendicular vector instead.
+            axis = new Vector3(currentTargPos.y, -currentTargPos.x, 0); //the object will move perpendicular to this axis, don't point this at the target, point a perpendicular vector instead.
     }
 
     void ZigZog() {
