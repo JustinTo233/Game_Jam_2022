@@ -884,6 +884,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1873770695}
+    - target: {fileID: 5972333236873992005, guid: 4527b3111bb0d2643b5b1bcf3729a250, type: 3}
+      propertyPath: pickNextWaypointDist
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5972333236873992007, guid: 4527b3111bb0d2643b5b1bcf3729a250, type: 3}
       propertyPath: m_Name
       value: Runner
