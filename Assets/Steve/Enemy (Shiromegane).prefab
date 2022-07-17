@@ -42,6 +42,8 @@ GameObject:
   - component: {fileID: 6119638598305762645}
   - component: {fileID: 6119638598305762650}
   - component: {fileID: 3448915239547522385}
+  - component: {fileID: 8816392483657940684}
+  - component: {fileID: 8181081836182859729}
   m_Layer: 0
   m_Name: Circle (Enemy Graphics)
   m_TagString: Untagged
@@ -135,6 +137,39 @@ MonoBehaviour:
   beamCooldownCurr: 0
   beamCooldownEnd: 3
   target: {fileID: 0}
+--- !u!95 &8816392483657940684
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6119638598305762644}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c892f346bbf22bc4c94be5126a1a9420, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8181081836182859729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6119638598305762644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d2a671c8342ac343beab38f0221d592, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aiPath: {fileID: 6119638598913022029}
 --- !u!1 &6119638598913022031
 GameObject:
   m_ObjectHideFlags: 0
@@ -149,7 +184,6 @@ GameObject:
   - component: {fileID: 6119638598913022028}
   - component: {fileID: 5752505576600398949}
   - component: {fileID: 1187147866805259500}
-  - component: {fileID: 3808926776880788624}
   - component: {fileID: 1891993876798097241}
   m_Layer: 0
   m_Name: Enemy (Shiromegane)
@@ -292,26 +326,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 200
---- !u!95 &3808926776880788624
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6119638598913022031}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: fb207b76f049d0b4ab9e6131422ea051, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1891993876798097241
 MonoBehaviour:
   m_ObjectHideFlags: 0
