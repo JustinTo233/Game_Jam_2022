@@ -280,6 +280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet_spawn: {fileID: 6156153468900638297}
   bullet_object: {fileID: 5906901408529511209}
+  weapon_sound: {fileID: 0}
   weapon_damage: 0
   weapon_reload: 0
   weapon_firespeed: 30
@@ -524,6 +525,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet_spawn: {fileID: 6622178251426108695}
   bullet_object: {fileID: 1835951528669666488}
+  weapon_sound: {fileID: 0}
   weapon_damage: 1
   weapon_reload: 4
   weapon_firespeed: 30
@@ -725,8 +727,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2294814570974883804}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.004, y: -0.009, z: 0}
-  m_LocalScale: {x: 2.1666563, y: 0.2429, z: 1}
+  m_LocalPosition: {x: 0, y: -0.06, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6092981967398418568}
@@ -774,9 +776,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.254717, g: 0.19257441, b: 0.13616945, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -826,6 +828,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet_spawn: {fileID: 8957629177100785366}
   bullet_object: {fileID: 7337854125484342220}
+  weapon_sound: {fileID: 0}
   weapon_damage: 0
   weapon_reload: 0
   weapon_firespeed: 50
@@ -933,6 +936,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet_spawn: {fileID: 9218831573777364581}
   bullet_object: {fileID: 1422341348419786708}
+  weapon_sound: {fileID: 0}
   weapon_damage: 8
   weapon_reload: 0
   weapon_firespeed: 30
@@ -1040,6 +1044,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet_spawn: {fileID: 1734336757111409648}
   bullet_object: {fileID: 7626988987028385072}
+  weapon_sound: {fileID: 0}
   weapon_damage: 4
   weapon_reload: 0
   weapon_firespeed: 40
@@ -1856,6 +1861,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet_spawn: {fileID: 745595824078224111}
   bullet_object: {fileID: 747655695116452421}
+  weapon_sound: {fileID: 0}
   weapon_damage: 0
   weapon_reload: 0
   weapon_firespeed: 30
