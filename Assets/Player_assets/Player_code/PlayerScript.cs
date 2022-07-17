@@ -221,8 +221,19 @@ public class PlayerScript : MonoBehaviour
         } else
         {
             health_current -= damage;
+            if (health_current <= 0)
+            {
+                PlayerDeath();
+            }
             return true;
         }
+        
+    }
+
+    //IMPORTANT GAME MANAGER HERE
+    public void PlayerDeath()
+    {
+        
     }
     #endregion
 
