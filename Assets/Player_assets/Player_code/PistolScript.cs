@@ -11,6 +11,13 @@ public class PistolScript : GunScript
         weapon_cooldown = 0;
         tf = GetComponent<Transform>();
         Debug.Log(GetComponent<Transform>());
+        weapon_current_ammo = weapon_ammo;
+    }
+
+    private void OnEnable()
+    {
+        weapon_current_ammo = weapon_ammo;
+        weapon_cooldown = 0;
     }
 
     // Update is called once per frame
