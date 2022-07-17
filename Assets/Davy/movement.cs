@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class movement : MonoBehaviour
 {
-    public float movementSpeed = 0.01f;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,8 +13,8 @@ public class movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float Vertical = Input.GetAxis("Vertical") * movementSpeed;
-        float Horizontal = Input.GetAxis("Horizontal") * movementSpeed;
+        float Vertical = Input.GetAxis("Vertical") * .001;
+        float Horizontal = Input.GetAxis("Horizontal") * .001;
         transform.Translate(0, Vertical, 0);
         transform.Translate(Horizontal, 0, 0);
     }
