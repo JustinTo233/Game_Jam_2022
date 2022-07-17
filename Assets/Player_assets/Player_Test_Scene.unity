@@ -1246,6 +1246,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 760336977630517214, guid: 3a5e1c99fe92758438d79f720486e060, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 16f86d4384f0d3b4399971665b30aa64, type: 3}
     - target: {fileID: 1422341348419786708, guid: 3a5e1c99fe92758438d79f720486e060, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1382,10 +1386,18 @@ PrefabInstance:
       propertyPath: weapon_sound
       value: 
       objectReference: {fileID: 705939267}
+    - target: {fileID: 5137360664423396020, guid: 3a5e1c99fe92758438d79f720486e060, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0c106010ec52e1d4d8894ffaf0a10837, type: 3}
     - target: {fileID: 5515781261904412356, guid: 3a5e1c99fe92758438d79f720486e060, type: 3}
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6125752597358771808, guid: 3a5e1c99fe92758438d79f720486e060, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8691a6f49ff601241a6bfe3932a8affd, type: 3}
     - target: {fileID: 8400208769526814537, guid: 3a5e1c99fe92758438d79f720486e060, type: 3}
       propertyPath: move_speed
       value: 20
