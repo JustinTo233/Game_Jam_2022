@@ -9,6 +9,7 @@ public class BiggusSlowusGFX : MonoBehaviour
     public float sprite_offset = 7.03f;
     public Animator animator;
     public BiggusSlowusShooting bss;
+    public BiggusHealth bh;
 
     // Update is called once per frame
     void Update()
@@ -30,5 +31,9 @@ public class BiggusSlowusGFX : MonoBehaviour
     void shoot_funct()
     {
         bss.Shoot();
+    }
+    void death_funct()
+    {
+        bh.Death();
     }
 }

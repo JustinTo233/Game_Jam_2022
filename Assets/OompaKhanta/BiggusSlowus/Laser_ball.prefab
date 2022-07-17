@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9188178617745243743}
   - component: {fileID: 6213206523757728691}
   - component: {fileID: 9001836106334667386}
+  - component: {fileID: 7708590408495881809}
   m_Layer: 0
   m_Name: Laser_ball
   m_TagString: Untagged
@@ -122,4 +123,17 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
+--- !u!114 &7708590408495881809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077427998444563209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 747de93778d40be4ca058fc205654496, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletDamage: 1

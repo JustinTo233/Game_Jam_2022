@@ -41,6 +41,7 @@ float timeSinceFire = 0f;
 
     void startShoot()
     {
+        animator.ResetTrigger("Damaged");
         animator.SetTrigger("Shoot");
     }
 
