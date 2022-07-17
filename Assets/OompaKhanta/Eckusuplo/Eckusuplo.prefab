@@ -23,14 +23,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 833323451937928866}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 1, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5669157311401571984}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!1 &1572432894757640956
 GameObject:
   m_ObjectHideFlags: 0
@@ -85,14 +85,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3809453482419298556}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -1, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5669157311401571984}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!1 &5669157311401572012
 GameObject:
   m_ObjectHideFlags: 0
@@ -107,6 +107,8 @@ GameObject:
   - component: {fileID: 5669157311401572015}
   - component: {fileID: 7029498194768468849}
   - component: {fileID: 2040992972102399900}
+  - component: {fileID: 2363967576482203649}
+  - component: {fileID: 2500332267090530102}
   m_Layer: 0
   m_Name: Eckusuplo
   m_TagString: Untagged
@@ -175,7 +177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 5
-  radius: 1
+  radius: 0.75
   height: 2
   canMove: 1
   maxSpeed: 6
@@ -199,7 +201,7 @@ MonoBehaviour:
   rotationSpeed: 360
   slowdownDistance: 2
   pickNextWaypointDist: 2
-  endReachedDistance: 1
+  endReachedDistance: 0.75
   alwaysDrawGizmos: 1
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
@@ -255,6 +257,43 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &2363967576482203649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5669157311401572012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47b89fa0147d83d4187b10d86f847eb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+  animator: {fileID: 1309587787383934021}
+--- !u!114 &2500332267090530102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5669157311401572012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f5670fbb0d172c4ab1ff1ec20815af1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upFrag: {fileID: 1418593060118212522}
+  rightFrag: {fileID: 409449797637150304}
+  leftFrag: {fileID: 4336079910406107898}
+  downFrag: {fileID: 1409656419903891117}
+  playerCharacter: {fileID: 0}
+  fragPrefab: {fileID: 2091738996195619751, guid: c7fad1f2f26a7e4499e0ceb039c6f35b, type: 3}
+  explosionEffect: {fileID: 1544891424202459198, guid: ea55500b1906eba429982bd4548b47dd, type: 3}
+  fragForce: 20
+  explosionDamage: 1
+  explosionRange: 5
+  animator: {fileID: 1309587787383934021}
 --- !u!1 &5669157311870149559
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,8 +305,9 @@ GameObject:
   - component: {fileID: 5669157311870149558}
   - component: {fileID: 5669157311870149561}
   - component: {fileID: 2721533307270032296}
+  - component: {fileID: 1309587787383934021}
   m_Layer: 0
-  m_Name: Circle (Enemy Graphics)
+  m_Name: Eckusuplo (Enemy Graphics)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -281,7 +321,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5669157311870149559}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.01, y: 0.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -329,7 +369,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: -651228876, guid: c239b2195b288e444b4bc12335f6a7a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -352,6 +392,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3adcda71fd7705347aed29145118868f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  aiPath: {fileID: 5669157311401572014}
+  animator: {fileID: 1309587787383934021}
+  sprite_offsetx: 0.01
+  sprite_offsety: 0.14
+  eb: {fileID: 2500332267090530102}
+--- !u!95 &1309587787383934021
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5669157311870149559}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bc53ea6a506f93344be457e8008864af, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6619182990303702057
 GameObject:
   m_ObjectHideFlags: 0
@@ -375,11 +440,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6619182990303702057}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -1, w: 0}
   m_LocalPosition: {x: 0, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5669157311401571984}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
