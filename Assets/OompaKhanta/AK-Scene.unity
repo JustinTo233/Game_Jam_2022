@@ -176,7 +176,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 30
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -220,11 +220,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5669157311401571984, guid: 221b35a9a2426cc4990bfd43b911ea31, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.63
+      value: -4.38
       objectReference: {fileID: 0}
     - target: {fileID: 5669157311401571984, guid: 221b35a9a2426cc4990bfd43b911ea31, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.34
+      value: 0.79
       objectReference: {fileID: 0}
     - target: {fileID: 5669157311401571984, guid: 221b35a9a2426cc4990bfd43b911ea31, type: 3}
       propertyPath: m_LocalPosition.z
@@ -262,16 +262,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Biggus_Slowus
       objectReference: {fileID: 0}
-    - target: {fileID: 5669157311401572014, guid: 221b35a9a2426cc4990bfd43b911ea31, type: 3}
-      propertyPath: radius
-      value: 0.68
-      objectReference: {fileID: 0}
-    - target: {fileID: 5669157311401572014, guid: 221b35a9a2426cc4990bfd43b911ea31, type: 3}
-      propertyPath: maxSpeed
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5669157311401572015, guid: 221b35a9a2426cc4990bfd43b911ea31, type: 3}
       propertyPath: target
+      value: 
+      objectReference: {fileID: 2053140930}
+    - target: {fileID: 8288501440435373744, guid: 221b35a9a2426cc4990bfd43b911ea31, type: 3}
+      propertyPath: playerCharacter
       value: 
       objectReference: {fileID: 2053140930}
     m_RemovedComponents: []
@@ -307,7 +303,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAACAn+skZXbFVgIAABAFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VE1z2jAQ/SuMzk0HDAxDb41DSA8kTGgnF1+EtMYaZMmjj/A1/PeuZBs7dHpCvPd29+1q5QsRylbAnDZLI/hKcyA/BiScybdBR77Ake602ogztJoPwV0RRDRq3qkTGvFRCLO6BGcE+6l2MoiHCHolcm3KBd9Bqq2zCOdUWkDKaBeiFUKXATniz8M8hJzwlMzC6Yyn+XBwxSMD5cB00lbYymqVV0zSsgIeLHfiZNSoR7VMYTONIjBMSyls44S4UxU7TWllPfaBAi4odhbLB30BYle4kLcf/JbnFlxjydDTkzA4oDoredT11Epq97WvTyo93IzXKVf/sA+jSOdGly9t1dEwVHCFYPt3emLUut5Q+/DTV9teHajc062EjwLUq14a7RVH0hkfQr2F5Kn7e2ssLYDtO7y2egf66v9XE3q4xt6PqRTlNlDfJzWwkTpOO148GLyXX2g4roVtUiAaXPyx8Jvu+vvTEM/CWIdU06UK9rbamyAliziz0I13qTYKItyYrkBR6U5rTOPuL/CO65W9Y55peClN8YZrH8BdSIQ7/XB4R6314XZZttCHFdjizTspFHSmA/GKc0q1UvV+9WfShm28ySnrhe284F9Xi7BxMh1vZzQZ5dNkPh0+wHhKJ5NkNmOcT+fbMYm7JxT2SeW6NtqMB29NdckV7ln7ARksDa3irnNDD0txLnVv5ELlesMMgHqrM9yMg8Ei+Cb5ggsc0AacEyreN7lkRGq2B57dEmWx08XRGZp1WTJSiU/tApKRNH4xMhLg2y6vDXwKOITibbIruf4FUEsDBBQAAAgIAACAn+u3T6eMbQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM011FQSi9KLMgoBooYgjilmSkgdrRSsrGRqXGSeaKRYZqpkaWpgW6qsWmiiYmRuXlySoqpZZKxUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAACAn+skZXbFVgIAABAFAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAACAn+u3T6eMbQAAAHgAAAAJACQAAAAAAAAAAAAAAKMCAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAWwMAAAAA
+    dataString: UEsDBBQAAAgIAACAn+vnFZZOWAIAABEFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VE1z2jAQ/SuMzqVjvsrQW+sQ0kMCE9rJxRchrbEGWfLog49k+O9dyTZ26PSEeO/t7tvVyh9EKFsBc9qsjODPmgP5PiDhTL4MOvIJznSv1Va8Q6t5E9wVQUSj5pU6oREfhTCrS3BGsB9qL4M4QdArkWtTLvkeUm2dRTin0gJSRrsQrRD6GJAz/gwXIeSCp/E8nN7xtEgGVzwyUA5MJ22FraxWecUkLSvgwXInHiWLRv5tGnUKu2kkwTnTUgrbWCHuUsVWU1pZj42ggAuKrcX6QV+A2Bcu2OwHr/Pcgms8GXp5EAYnVGclP3U9tpLaQ23sSKWHm/M65fM/7HAU6dzo8qmtOkpCBVcIdnilF0at6021Dz98tu3VicoD3Ul4K0C96JXRXnEknfEh1FsYP3R/b42lBbBDh9dW70Bf/f9uQg/X2Ps5laLcBerrtAa2Usdpx5sHg/fyCw3HvbBNCkSDiz8WftN9f4Ea4lEY65BqulTB3k57E6RkGWcWuvEu1UZBhBvTFSgq3WWDadz9Bd5xvbJ3zCMNT6Up3nDtC7gLiXCnT5I7aqNPt8uyhT49gy3W3kmhoDMdiBecU6qVqverP5M2bOtNTlkvbO8F/7xahE3Gs8luTsejfDZezJIhTGZ0Oh3P54zz2WI3IXH3hMI+qdzURpvx4K2pLrnCPWu/IIOVoVXcdW7oaSXeS90buVC53jIDoNZ1hptxMFgE3yRfcoED2oJzQsX7Jh8ZkZodgGe3RFnsdHl2hmZdloxU4qhdQDKSxk9GRgJ82+WNgaOAUyjeJruS619QSwMEFAAACAgAAICf67dPp4xtAAAAeAAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSMzTXUVBKL0osyCgGihiCOKWZKSB2tFKysZGpcZJ5opFhmqmRpamBbqqxaaKJiZG5eXJKiqllkrFSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAAICf6+cVlk5YAgAAEQUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAICf67dPp4xtAAAAeAAAAAkAJAAAAAAAAAAAAAAApQIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAABdAwAAAAA=
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
@@ -442,7 +438,7 @@ Transform:
   m_GameObject: {fileID: 2053140927}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -460,4 +456,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4456da849bf3a5a4f933da558da1fb03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movement_speed: 0.02
+  movement_speed: 0.05
