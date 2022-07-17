@@ -131,8 +131,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd4236638e1bacb448769bf93cba7cfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heartPrefab: {fileID: 0}
-  firePoint: {fileID: 0}
+  heartPrefab: {fileID: 323492755219042337, guid: a776ebce37fc9a34eb156ef10e202783, type: 3}
+  firePoint: {fileID: 5217572185697924278}
   fireForce: 20
   beamCooldownCurr: 0
   beamCooldownEnd: 3
@@ -325,7 +325,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8886730ea6b4cc4793228ef3c665e3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 200
+  maxHealth: 1
 --- !u!114 &1891993876798097241
 MonoBehaviour:
   m_ObjectHideFlags: 0
