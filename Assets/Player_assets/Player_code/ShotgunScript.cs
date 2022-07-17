@@ -61,6 +61,7 @@ public class ShotgunScript : GunScript
                 bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(mouse_x - barrel_x + x, mouse_y - barrel_y + y).normalized * weapon_bullet_speed;
             }
             
+            weapon_sound.Play();
             weapon_cooldown = 60 / weapon_firespeed;
             weapon_current_ammo -= 1;
         }
