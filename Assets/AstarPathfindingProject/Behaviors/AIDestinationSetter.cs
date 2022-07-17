@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
+
 namespace Pathfinding {
 	/// <summary>
 	/// Sets the destination of an AI to the position of a specified object.

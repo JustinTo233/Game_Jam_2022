@@ -23,10 +23,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7329994401840231322, guid: b59f497d844c0d64caf3d1d0663241a7, type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 7329994401840231323, guid: b59f497d844c0d64caf3d1d0663241a7, type: 3}
       propertyPath: radius
       value: 0.5
@@ -58,6 +54,10 @@ PrefabInstance:
     - target: {fileID: 7329994401840231323, guid: b59f497d844c0d64caf3d1d0663241a7, type: 3}
       propertyPath: whenCloseToDestination
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7329994401840231323, guid: b59f497d844c0d64caf3d1d0663241a7, type: 3}
+      propertyPath: autoRepath.visualizeSensitivity
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7329994401840231332, guid: b59f497d844c0d64caf3d1d0663241a7, type: 3}
       propertyPath: detailedGizmos
