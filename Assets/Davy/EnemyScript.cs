@@ -5,6 +5,9 @@ using UnityEngine;
 public class EnemyScript : MonoBehaviour
 {
     [SerializeField] float health, maxHealth = 3f;
+    [SerializeField] private float attackDamage = 10f;
+    [SerializeField] private float attackSpeed = 1f;
+    private float canAttack;
     // public int currentHealth = 1;
     private void Start() 
     {
@@ -18,5 +21,18 @@ public class EnemyScript : MonoBehaviour
         {
             Destroy(gameObject);
          } 
+    }
+
+    // attack
+
+    private void OnCollisionStay2D(Collision2D other) {
+        if(other.gameObject.tag == "Player"){
+            if(attackSpeed <= canAttack){
+                other.gameObject.GetComponent<PlayerHealth>().UpdateHealth(-attackDamage);
+                canAttack = 0f;
+            } else{
+                canAttack += Time.deltaTime;
+            }
+        }
     }
 }

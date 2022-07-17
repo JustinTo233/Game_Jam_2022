@@ -57,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5372370792466898353, guid: 0af4d29e590a00c4d84b5696ecdf75c0, type: 3}
       propertyPath: m_Name
-      value: HomingSkull
+      value: HomingSkull with Script
       objectReference: {fileID: 0}
     - target: {fileID: 5372370792466898353, guid: 0af4d29e590a00c4d84b5696ecdf75c0, type: 3}
       propertyPath: m_IsActive
@@ -88,6 +88,10 @@ PrefabInstance:
       value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 5372370792466898355, guid: 0af4d29e590a00c4d84b5696ecdf75c0, type: 3}
+      propertyPath: constrainInsideGraph
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372370792466898355, guid: 0af4d29e590a00c4d84b5696ecdf75c0, type: 3}
       propertyPath: pickNextWaypointDist
       value: 10
       objectReference: {fileID: 0}
@@ -116,3 +120,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 1
+  attackDamage: 10
+  attackSpeed: 1
