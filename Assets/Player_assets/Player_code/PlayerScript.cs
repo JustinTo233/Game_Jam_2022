@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerScript : MonoBehaviour
 {
+    
+
     //PlayerVariables are the base component variables for the player
     #region PlayerVariables
     Rigidbody2D rb;
@@ -233,7 +236,7 @@ public class PlayerScript : MonoBehaviour
     //IMPORTANT GAME MANAGER HERE
     public void PlayerDeath()
     {
-        
+        SceneManager.LoadScene("GameOver");
     }
     #endregion
 

@@ -46,6 +46,7 @@ public class SwordScript : GunScript
         
         if (Input.GetMouseButtonDown(0))
         {
+            weapon_sound.Play();
             is_swinging = true;
             weapon_cooldown = 60 / weapon_firespeed;
             GameObject slash = Instantiate(bullet_object, player_tf.position, Quaternion.identity);
