@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    public float bullet_damage; 
     // Start is called before the first frame update
     void Start()
     {
@@ -17,8 +18,19 @@ public class Bullet : MonoBehaviour
     }
 
     //ADD TAGS
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Debug.Log("Hit");
+            collision.gameObject.SendMessage("TakeDamage", bullet_damage);
+            BulletDestroy();
+        }
     }
+
+    private void BulletDestroy()
+    {
+        Destroy(this.gameObject, 0);
+    }
+    
 }
