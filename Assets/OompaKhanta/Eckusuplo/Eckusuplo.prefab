@@ -352,6 +352,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3adcda71fd7705347aed29145118868f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  aiPath: {fileID: 5669157311401572014}
+  animator: {fileID: 0}
+  sprite_offset: 1
 --- !u!1 &6619182990303702057
 GameObject:
   m_ObjectHideFlags: 0
