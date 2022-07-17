@@ -100,7 +100,9 @@ public class PlayerScript : MonoBehaviour
         dash_cooldown_current = 0;
         weapon_current = weapon_start;
         GunSpawn();
+        /*
         GunDirection();
+        */
 
     }
 
@@ -108,7 +110,10 @@ public class PlayerScript : MonoBehaviour
     void Update()
     {
         MovementCheck();
+        Debug.Log(weapon_array);
+        /*
         GunDirection();
+        */
     }
 
     #region MovementFunctions
@@ -137,6 +142,9 @@ public class PlayerScript : MonoBehaviour
             {
                 is_dash = false;
                 dash_cooldown_current = dash_cooldown_duration;
+                weapon_current = Random.Range(0, weapon_array.Length);
+                GunSpawn();
+                
             }
             return;
         }
@@ -164,6 +172,7 @@ public class PlayerScript : MonoBehaviour
             dash_counter = dash_time;
             rb.velocity = move_direction.normalized * dash_velocity;
             dash_cooldown_current = dash_cooldown_duration;
+            GunRemoval();
 
         }
         else
@@ -179,6 +188,7 @@ public class PlayerScript : MonoBehaviour
     #region AttackFunctions
     private void GunSpawn()
     {
+        Debug.Log(weapon_current);
         weapon = weapon_array[weapon_current];
         weapon_tf = weapon.GetComponent<Transform>();
         weapon.SetActive(true);
@@ -188,6 +198,7 @@ public class PlayerScript : MonoBehaviour
     {
         weapon.SetActive(false);
     }
+    /*
     private void GunDirection()
     {
         //Places the weapon on the player always (SUBJECT TO CHANGE)
@@ -196,8 +207,23 @@ public class PlayerScript : MonoBehaviour
         weapon_tf.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
 
+        
     }
+    */
     #endregion
 
+    #region HealthFunctions
+    public bool TakeDamage(float damage)
+    {
+        if (is_invul || is_dash)
+        {
+            return false;
+        } else
+        {
+            health_current -= damage;
+            return true;
+        }
+    }
+    #endregion
 
 }
