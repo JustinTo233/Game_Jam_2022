@@ -6,6 +6,7 @@ public class Slash : MonoBehaviour
 {
     #region SlashProperties
     public float slash_timer;
+    public float slash_damage;
     private float current_timer;
     #endregion
     // Start is called before the first frame update
@@ -32,8 +33,13 @@ public class Slash : MonoBehaviour
     }
 
     //DO THIS FOR THE COLLIDER
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Debug.Log("Hit");
+            collision.gameObject.SendMessage("TakeDamage", slash_damage);
+            SlashDestroy();
+        }
     }
 }

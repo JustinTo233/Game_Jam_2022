@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    public float bullet_damage; 
     // Start is called before the first frame update
     void Start()
     {
@@ -17,8 +18,24 @@ public class Bullet : MonoBehaviour
     }
 
     //ADD TAGS
-    private void OnCollisionEnter2D(Collision2D collision)
+    protected virtual void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Wall"))
+        {
+            Debug.Log("Hit");
+            collision.gameObject.SendMessage("TakeDamage", bullet_damage);
+            BulletDestroy();
+        }
+        else if (collision.gameObject.CompareTag("Wall"))
+        {
+            Debug.Log("Hit");
+            BulletDestroy();
+        }
     }
+
+    protected void BulletDestroy()
+    {
+        Destroy(this.gameObject, 0);
+    }
+    
 }

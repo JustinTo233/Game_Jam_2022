@@ -7,6 +7,7 @@ public class GunScript : MonoBehaviour
     #region GameVaraibles
     [SerializeField] protected GameObject bullet_spawn;
     [SerializeField] protected GameObject bullet_object;
+    [SerializeField] protected AudioSource weapon_sound;
     protected Transform tf;
     protected Transform player_tf;
 
@@ -19,6 +20,8 @@ public class GunScript : MonoBehaviour
     public float weapon_firespeed;
     public float weapon_spread;
     public float weapon_bullet_speed;
+    public float weapon_ammo;
+    protected float weapon_current_ammo;
     //Weapon fire cooldown
     protected float weapon_cooldown;
 
@@ -33,9 +36,11 @@ public class GunScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        weapon_sound = GetComponent<AudioSource>();
         weapon_cooldown = 0;
         tf = GetComponent<Transform>();
         player_tf = GetComponentInParent<Transform>();
+        weapon_current_ammo = weapon_ammo;
     }
 
     // Update is called once per frame
@@ -65,13 +70,15 @@ public class GunScript : MonoBehaviour
         
 
         //Checks to see if the mouse button is pressed
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && weapon_current_ammo > 0)
         {
+            weapon_sound.Play();
             GameObject bullet = Instantiate(bullet_object, bullet_spawn.GetComponent<Transform>().position, Quaternion.identity);
             bullet.SetActive(true);
             bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(mouse_x - barrel_x, mouse_y - barrel_y).normalized * weapon_bullet_speed;
             weapon_cooldown = 60 / weapon_firespeed;
             Debug.Log(bullet.GetComponent<Rigidbody2D>().velocity);
+            weapon_current_ammo -= 1;
         }
     }
 
