@@ -505,7 +505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77a851ba7665c944da4533d21e526cba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slash_timer: 0
+  slash_timer: 4
 --- !u!61 &3455777880127825042
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -681,19 +681,19 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9001221858388531684}
-  m_BodyType: 2
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_AngularDrag: 0
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &-1649456427261654431
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -732,7 +732,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e40b18707e909646befb20c080a300f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move_speed: 1
+  move_speed: 7
   start_facing_direction: {x: 0, y: 0}
   dash_time: 1
   dash_velocity: 5
