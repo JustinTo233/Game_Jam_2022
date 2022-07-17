@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerScript : MonoBehaviour
 {
-    public GameOver GameOver;
+    
 
     //PlayerVariables are the base component variables for the player
     #region PlayerVariables
@@ -235,7 +236,7 @@ public class PlayerScript : MonoBehaviour
     //IMPORTANT GAME MANAGER HERE
     public void PlayerDeath()
     {
-    
+        SceneManager.LoadScene("GameOver");
     }
     #endregion
 
