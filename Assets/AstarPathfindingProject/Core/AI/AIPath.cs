@@ -388,7 +388,7 @@ namespace Pathfinding {
 			} else {
 				slowdown = 1;
 				// Slow down as quickly as possible
-				velocity2D -= Vector2.ClampMagnitude(velocity2D, currentAcceleration * deltaTime);
+				velocity2D -= Vector2.ClampMagnitude(velocity2D, currentAcceleration * deltaTime); //put a minus on currentAcceleration for funsies
 			}
 
 			velocity2D = MovementUtilities.ClampVelocity(velocity2D, maxSpeed, slowdown, slowWhenNotFacingTarget && enableRotation, forwards);
@@ -400,6 +400,7 @@ namespace Pathfinding {
 			var delta2D = lastDeltaPosition = CalculateDeltaToMoveThisFrame(movementPlane.ToPlane(currentPosition), distanceToEnd, deltaTime);
 			nextPosition = currentPosition + movementPlane.ToWorld(delta2D, verticalVelocity * lastDeltaTime);
 			CalculateNextRotation(slowdown, out nextRotation);
+
 		}
 
 		protected virtual void CalculateNextRotation (float slowdown, out Quaternion nextRotation) {
