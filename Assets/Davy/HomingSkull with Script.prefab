@@ -99,6 +99,10 @@ PrefabInstance:
       propertyPath: pickNextWaypointDist
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 5372370792801519780, guid: 0af4d29e590a00c4d84b5696ecdf75c0, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5372370792801519787, guid: 0af4d29e590a00c4d84b5696ecdf75c0, type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.5
