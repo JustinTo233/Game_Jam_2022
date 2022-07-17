@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerScript : MonoBehaviour
 {
-    
+    public Animator animatior;
 
     //PlayerVariables are the base component variables for the player
     #region PlayerVariables
@@ -146,6 +146,7 @@ public class PlayerScript : MonoBehaviour
                 is_dash = false;
                 dash_cooldown_current = dash_cooldown_duration;
                 weapon_current = Random.Range(0, weapon_array.Length);
+                animatior.SetInteger("WeaponType", weapon_current);
                 GunSpawn();
                 
             }
@@ -161,10 +162,12 @@ public class PlayerScript : MonoBehaviour
         if (move_direction != Vector2.zero)
         {
             is_moving = true;
+            animatior.SetBool("Moving", true);
 
         } else
         {
             is_moving = false;
+            animatior.SetBool("Moving", false);
         }
 
         //Dashes the character
