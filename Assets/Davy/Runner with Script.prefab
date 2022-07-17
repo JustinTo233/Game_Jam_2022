@@ -127,7 +127,9 @@ PrefabInstance:
       propertyPath: m_GravityScale
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2390731090428520250, guid: b59f497d844c0d64caf3d1d0663241a7, type: 3}
+    - {fileID: 398580981386239814, guid: b59f497d844c0d64caf3d1d0663241a7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b59f497d844c0d64caf3d1d0663241a7, type: 3}
 --- !u!1 &5972333236873992007 stripped
 GameObject:
@@ -150,5 +152,3 @@ MonoBehaviour:
   maxHealth: 1
   attackDamage: 1
   attackSpeed: 1
-  goblindeath_sound: {fileID: 0}
-  skulldeath_sound: {fileID: 0}

@@ -720,6 +720,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1931132821 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3128942636903023900, guid: ad441a2a9aeb3124e90f1cbf1afc640b, type: 3}
+  m_PrefabInstance: {fileID: 8738391657857555419}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2095822871 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4029002458677946853, guid: ad441a2a9aeb3124e90f1cbf1afc640b, type: 3}
+  m_PrefabInstance: {fileID: 8738391657857555419}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2095822872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2095822871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd4236638e1bacb448769bf93cba7cfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heartPrefab: {fileID: 323492755219042337, guid: a776ebce37fc9a34eb156ef10e202783, type: 3}
+  firePoint: {fileID: 1931132821}
+  fireForce: 50
+  beamCooldownCurr: 0
+  beamCooldownEnd: 3
+  target: {fileID: 1810359598}
 --- !u!1001 &5204957285146949600
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -785,7 +813,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4756812530039749513, guid: 43570cec0e03f5e40ae72d322698ea80, type: 3}
       propertyPath: maxHealth
-      value: 40
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43570cec0e03f5e40ae72d322698ea80, type: 3}
@@ -845,10 +873,6 @@ PrefabInstance:
       value: Enemy (Shiromegane)
       objectReference: {fileID: 0}
     - target: {fileID: 4029002458677946854, guid: ad441a2a9aeb3124e90f1cbf1afc640b, type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 1810359598}
-    - target: {fileID: 5537655822374354171, guid: ad441a2a9aeb3124e90f1cbf1afc640b, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 1810359598}
