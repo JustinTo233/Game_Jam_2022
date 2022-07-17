@@ -235,7 +235,7 @@ public class PlayerScript : MonoBehaviour
     //IMPORTANT GAME MANAGER HERE
     public void PlayerDeath()
     {
-        GameOver;
+    
     }
     #endregion
 
