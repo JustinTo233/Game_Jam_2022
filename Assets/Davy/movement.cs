@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class movement : MonoBehaviour
 {
+    public float moveSpeed = 1f;
+    public Weapon weapon;
+    public Rigidbody2D rb;
+    Vector2 moveDirection;
+    Vector2 mousePosition;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,9 +18,22 @@ public class movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float Vertical = Input.GetAxis("Vertical") * 0.001f;
-        float Horizontal = Input.GetAxis("Horizontal") * 0.001f;
-        transform.Translate(0, Vertical, 0);
-        transform.Translate(Horizontal, 0, 0);
+        float moveX = Input.GetAxisRaw("Horizontal");
+        float moveY = Input.GetAxisRaw("Vertical");
+        if(Input.GetMouseButton(0))
+        {
+            weapon.Fire();
+        }
+        moveDirection = new Vector2(moveX, moveY).normalized;
+        mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+    }
+
+    private void FixedUpdate()
+    {
+        rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
+
+        Vector2 aimDirection = mousePosition - rb.position;
+        float aimAngle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg - 90f;
+        rb.rotation = aimAngle;
     }
 }
