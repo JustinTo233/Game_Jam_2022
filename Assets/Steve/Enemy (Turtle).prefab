@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 2138943891130768128}
   - component: {fileID: 4756812530039749513}
   - component: {fileID: 7396610175347246069}
+  - component: {fileID: 9188865046120644176}
+  - component: {fileID: -2259208137516083761}
   m_Layer: 0
   m_Name: Enemy (Turtle)
   m_TagString: Enemy
@@ -130,19 +132,19 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 474951206097514282}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &4756812530039749513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -155,7 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8886730ea6b4cc4793228ef3c665e3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 50
+  maxHealth: 25
 --- !u!95 &7396610175347246069
 Animator:
   serializedVersion: 4
@@ -176,6 +178,49 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &9188865046120644176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474951206097514282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69628c216e4d9584d96301453d0c54b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shitPrefab: {fileID: 5554430670975932022, guid: 736204c39e3dd3946892cf6760ec5cb6, type: 3}
+  firePoint: {fileID: 5204957284874308897}
+  fireForce: 0
+  shitCooldownCurr: 0
+  shitCooldownEnd: 1
+--- !u!61 &-2259208137516083761
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474951206097514282}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0909667, y: -0.78686213}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.5458002, y: 0.8271632}
+  m_EdgeRadius: 0
 --- !u!1 &474951206702676529
 GameObject:
   m_ObjectHideFlags: 0
@@ -188,7 +233,6 @@ GameObject:
   - component: {fileID: 474951206702676543}
   - component: {fileID: 5204957284755822985}
   - component: {fileID: 5204957284755822984}
-  - component: {fileID: 5204957284755822988}
   m_Layer: 0
   m_Name: Circle (Enemy Graphics)
   m_TagString: Untagged
@@ -297,23 +341,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aiPath: {fileID: 474951206097514280}
---- !u!114 &5204957284755822988
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 474951206702676529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69628c216e4d9584d96301453d0c54b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shitPrefab: {fileID: 5554430670975932022, guid: 736204c39e3dd3946892cf6760ec5cb6, type: 3}
-  firePoint: {fileID: 5204957284874308897}
-  fireForce: 0
-  shitCooldownCurr: 0
-  shitCooldownEnd: 1.5
 --- !u!1 &5204957284874308896
 GameObject:
   m_ObjectHideFlags: 0

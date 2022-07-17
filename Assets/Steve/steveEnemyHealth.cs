@@ -5,7 +5,7 @@ using UnityEngine;
 public class steveEnemyHealth : MonoBehaviour
 {
     private float health = 0f;
-    [SerializeField] private float maxHealth = 50f;
+    [SerializeField] private float maxHealth = 10f;
 
     private void Start(){
         health = maxHealth;
