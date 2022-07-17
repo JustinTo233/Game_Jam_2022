@@ -17,7 +17,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7329994401840231321, guid: b59f497d844c0d64caf3d1d0663241a7, type: 3}
       propertyPath: m_Name
-      value: Runner
+      value: Runner with Script
       objectReference: {fileID: 0}
     - target: {fileID: 7329994401840231321, guid: b59f497d844c0d64caf3d1d0663241a7, type: 3}
       propertyPath: m_IsActive
@@ -53,7 +53,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7329994401840231323, guid: b59f497d844c0d64caf3d1d0663241a7, type: 3}
       propertyPath: pickNextWaypointDist
-      value: 7
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7329994401840231323, guid: b59f497d844c0d64caf3d1d0663241a7, type: 3}
       propertyPath: whenCloseToDestination
@@ -140,3 +140,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 1
+  attackDamage: 1
+  attackSpeed: 1

@@ -120,5 +120,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 1
-  attackDamage: 10
+  attackDamage: 1
   attackSpeed: 1
