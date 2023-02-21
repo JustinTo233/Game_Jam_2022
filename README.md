@@ -7,3 +7,7 @@ By courtesy and approval of the united nation of **josh88thewarcriminal**, we th
 With the power of sweat, blood, tears, and more sweat, we will beat the absolute shit out of Unity and mold it from the ground up into the masterpiece that is our game. We vow to hold no mercy in exhausting our intellectual creativity, and in the case we have been defeated by mounting pressures of time and project complexity, we will die standing rather than kneeling for our bodies are simply constructed in an alternative, superior manner. A manner that refuses to give in until the very end.
 
 Simply put in Larsman's terms, this project's "asshole" is a basketball hoop, and we are the rag-tag, no-bullshit, God-sent, Golden State Warriors.
+
+
+
+https://oompakhanta.itch.io/time-to-die
